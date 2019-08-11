@@ -61,7 +61,7 @@ void setup() {
   setupServices();
   startAdvertising();
 
-  imu.begin()
+  imu.begin();
   imu.dmpBegin(DMP_FEATURE_PEDOMETER);
   imu.dmpSetPedometerSteps(stepCount);
   imu.dmpSetPedometerTime(stepTime);
