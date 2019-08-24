@@ -121,7 +121,7 @@ void loop() {
   if (digitalRead(M5_BUTTON_HOME) == LOW) {
     notifyCharacteristic->setValue(&countStep, 1);
     notifyCharacteristic->notify();
-    while(digitalRead(M5_BUTTON_RST) == LOW);
+    while(digitalRead(M5_BUTTON_HOME) == LOW);
   }
 
   // Disconnection
